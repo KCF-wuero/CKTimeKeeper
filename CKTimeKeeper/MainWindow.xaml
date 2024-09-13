@@ -1,0 +1,18 @@
+﻿<Window x:Class="CKTimeKeeper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CKTimeKeeper"
+        mc:Ignorable="d"
+       
+        ResizeMode="CanMinimize"
+        Title="MainWindow" Height="277" Width="426">
+    <Grid Background="Black">
+        <Button x:Name="anmelden" Content="Anmelden" Background="LightGreen" HorizontalAlignment="Left" Margin="10,169,0,0" VerticalAlignment="Top" Height="63" Width="153" Click="anmelde_Click"/>
+        <Button x:Name="abmelden" Content="Abmelden" Background="PaleVioletRed" HorizontalAlignment="Left" Margin="249,169,0,0" VerticalAlignment="Top" Height="63" Width="153" Click="abmelden_Click"/>
+        <TextBox x:Name="textinp" Background="Gray" FontSize="20" HorizontalAlignment="Left" Margin="10,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="392" Height="30"/>
+        <TextBlock Foreground="gray" FontSize="35"  HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="CKTimeKeeper" VerticalAlignment="Top" Height="70" Width="238"/>
+        <TextBlock Foreground="gray" FontSize="20" HorizontalAlignment="Left" Margin="10,85,0,0" TextWrapping="Wrap" Text="Gearbeitet and :" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

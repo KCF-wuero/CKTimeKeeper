@@ -43,8 +43,6 @@ namespace CKTimeKeeper
             
             CsvConfiguration configPersons = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-               
-
                 Delimiter = ","
             };
             
@@ -61,7 +59,9 @@ namespace CKTimeKeeper
                
                 TimeSpan ts = timeData.endTime - timeData.startTime;
                 timeData.WTinMin = ts.TotalMinutes.ToString();
-                StreamWriter writer = new StreamWriter("TimeKept.csv");
+                var file = File.Open("Timekee", FileMode.Append);
+                var writer = new StreamWriter(file);
+
                 CsvWriter csvWriter = new CsvWriter(writer, configPersons);
                 List<Data> data = new List<Data>();
                 data.Add(timeData);
